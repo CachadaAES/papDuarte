@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turismo | Barragem do Cabril e Pedrógão Grande</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7fa;
+color:#333;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(8px);
+z-index:1000;
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+.hero{
+position:relative;
+height:100vh;
+overflow:hidden;
+}
+
+.hero video{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.45);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:65px;
+}
+
+.hero p{
+max-width:800px;
+margin:25px 0;
+font-size:20px;
+}
+
+.botao{
+padding:15px 35px;
+background:#0d8dd8;
+color:white;
+text-decoration:none;
+border-radius:40px;
+transition:.3s;
+}
+
+.botao:hover{
+background:#06679f;
+}
+
+section{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
+}
+
+h2{
+text-align:center;
+color:#0b5c8a;
+margin-bottom:35px;
+font-size:38px;
+}
+
+.texto{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+font-size:18px;
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.galeria img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+transition:.4s;
+}
+
+.galeria img:hover{
+transform:scale(1.05);
+}
+
+.videos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+gap:20px;
+}
+
+iframe{
+width:100%;
+height:280px;
+border:none;
+border-radius:15px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:20px 20px 10px;
+color:#0b5c8a;
+}
+
+.card p{
+padding:0 20px 25px;
+line-height:1.8;
+}
+
+footer{
+background:#083e5b;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Barragem do Cabril</div>
+
+<ul>
+<li><a href="#historia">História</a></li>
+<li><a href="#galeria">Galeria</a></li>
+<li><a href="#videos">Vídeos</a></li>
+<li><a href="#locais">Locais</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<video autoplay muted loop playsinline>
+<source src="video.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Barragem do Cabril</h1>
+
+<p>
+Descubra a beleza da Barragem do Cabril e os principais pontos de interesse turístico de Pedrógão Grande.
+</p>
+
+<a class="botao" href="#historia">Explorar</a>
+
+</div>
+
+</section>
+
+<section id="historia">
+
+<h2>A Barragem do Cabril</h2>
+
+<div class="texto">
+
+<p>
+
+A Barragem do Cabril, construída no rio Zêzere, é uma das maiores barragens portuguesas e desempenha um papel importante na produção de energia hidroelétrica. Rodeada por montanhas e paisagens deslumbrantes, é também um destino procurado para passeios, fotografia, desportos náuticos e contacto com a natureza.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="galeria">
+
+<h2>Galeria</h2>
+
+<div class="galeria">
+
+<img src="imagens/cabril1.jpg" alt="">
+<img src="imagens/cabril2.jpg" alt="">
+<img src="imagens/cabril3.jpg" alt="">
+<img src="imagens/cabril4.jpg" alt="">
+
+</div>
+
+</section>
+
+<section id="videos">
+
+<h2>Vídeos</h2>
+
+<div class="videos">
+
+<iframe src="https://www.youtube.com/embed/VIDEO1" allowfullscreen></iframe>
+
+<iframe src="https://www.youtube.com/embed/VIDEO2" allowfullscreen></iframe>
+
+</div>
+
+</section>
+
+<section id="locais">
+
+<h2>Descubra Pedrógão Grande</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="imagens/passadicos.jpg" alt="">
+
+<h3>Passadiços de Pedrógão Grande</h3>
+
+<p>
+Os Passadiços de Pedrógão Grande proporcionam um percurso pela natureza, com vistas panorâmicas, zonas de descanso e contacto direto com a paisagem envolvente. São um excelente local para caminhadas e fotografia.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="imagens/mosteiro.jpg" alt="">
+
+<h3>Praia Fluvial do Mosteiro</h3>
+
+<p>
+A Praia Fluvial do Mosteiro oferece águas cristalinas, amplos espaços verdes, parque de merendas, restaurante e excelentes condições para relaxar durante os meses de verão.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="imagens/resineiro.jpg" alt="">
+
+<h3>Rota do Resineiro</h3>
+
+<p>
+A Rota do Resineiro homenageia a tradição da extração da resina nos pinhais da região. Ao longo do percurso é possível conhecer a história desta profissão e desfrutar da tranquilidade da floresta.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="imagens/mega.jpg" alt="">
+
+<h3>Praia Fluvial da Mega Fundeira</h3>
+
+<p>
+Situada junto à EN2, a Praia Fluvial da Mega Fundeira destaca-se pela qualidade das suas águas, pelas zonas relvadas, pelo moinho tradicional e pelo ambiente familiar, ideal para um dia de descanso.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Turismo | Barragem do Cabril e Pedrógão Grande</h3>
+
+<p>© 2026 - Todos os direitos reservados.</p>
+
+</footer>
+
+</body>
+</html>
